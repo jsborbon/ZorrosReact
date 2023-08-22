@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules":{ //No se recomienda en produccion
+  "@next/next/no-img-element": "off", //Desactiva la regla de next para las imagenes
+  "jsx-a11y/alt-text": "off" //Desactiva la regla de jsx-a11y para el texto alternativo (Accesibilidad)
+}
 }
